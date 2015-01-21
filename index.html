@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rescuer - A simple game developed with CreateJs and RequireJs</title>
+    <meta name="description" content="Rescue all the lemmings that you can! Click on them for open their umbrellas. The more lemmings you rescue, the game will be harder!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link href='/src/rescuer/css/game.css' rel='stylesheet' type='text/css'>
+    <link href='/vendor/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <style>
+        .retroText {
+            font-family: 'Press Start 2P';
+        }
+    </style>
+</head>
+<body>
+    <div class="hidden-xs">
+        <br><br>
+    </div>
+    <div class="game-background">
+    <div class="container">
+    <div class="row">
+        <div class="game">
+            <canvas id="game" style="background-color: black"></canvas>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="page-header">
+                <h1 class="retroText">Rescuer</h1>
+            </div>
+            <p class="lead">Rescue all the lemmings that you can! Click on them for open their umbrellas. The more lemmings you rescue, the game will be harder!</p>
+            <p class="lead">Rescuer is a simple game I created for fun. The game uses CreateJS as game Engine and RequireJS as module loader. Also, I used other useful libraries like jQuery, share button, underscore and easytimer.</p>
+            <p class="lead">I chose lemmings because is a game that i loved when I was a child.</p>
+            <p class="lead">Enjoy It!</p>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="footer col-md-12">
+                <div>
+                    <strong>Source</strong><br>
+                    <a href="https://github.com/albert-gonzalez/rescuer-game">Github</a>
+                </div>
+                <div class="libraries">
+                    <strong>Libraries</strong><br>
+                    <a href="http://www.createjs.com/">CreateJs</a>
+                    <a href="http://requirejs.org/">RequireJs</a>
+                    <a href="http://jquery.com/">jQuery</a>
+                    <a href="https://github.com/carrot/share-button">Share Button</a>
+                    <a href="http://underscorejs.org/">Underscore</a>
+                    <a href="http://albert-gonzalez.github.io/easytimer.js/">Easytimer</a>
+                    <a href="http://getbootstrap.com/">Bootstrap</a>
+                </div>
+                <div>
+                    Created by <a href="https://github.com/albert-gonzalez">Albert González</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/requirejs/require.js"></script>
+    <script type="text/javascript">
+        require(["src/requireConfig/config"], function () {
+            requirejs.config({
+              paths: {'rescuer/js/main': '../dist/game'}
+            });
+            require(['rescuer/js/main']);
+        });
+    </script>
+</body>
+</html>

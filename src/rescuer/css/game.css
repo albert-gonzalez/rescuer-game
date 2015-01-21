@@ -1,0 +1,165 @@
+.game * {
+    margin: 0;
+}
+
+.game-background {
+    padding-top: 5px;
+    border: 1px solid #e6e6e6;
+    border-width: 1px 0px 1px 0px;
+    background: #eeefdf;
+}
+
+.game {
+    min-width: 240px;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.game canvas {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+    min-width: 240px;
+}
+
+.game h1, .game h2, .game h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.game h1, .game h2, .game h3, .game h4, .game h5, .game h6 {
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.game .scoreWindow {
+    position: absolute;
+    display: none;
+    text-align: center;
+    min-width: 240px;
+}
+
+.game .scoreWindow .background {
+    position: absolute;
+    opacity: 0.8;
+    background-color:  #ddd;
+    text-align: center;
+    min-width: 240px;
+    width: 100%;
+}
+
+.game .scoreWindow .content {
+    position:  absolute;
+    width: 100%;
+}
+
+.game .scoreWindow .bottom {
+    position: absolute;
+    bottom: 2vw;
+    width: 100%;
+}
+
+.game .scoreWindow h2 {
+    font-size: 3vw;
+}
+
+.game .scoreWindow h3 {
+    font-size: 2vw;
+}
+
+.game .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.game .btn:focus,
+.game .btn:active:focus,
+.game .btn.active:focus,
+.game .btn.focus,
+.game .btn:active.focus,
+.game .btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.game .btn:hover,
+.game .btn:focus,
+.game .btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+
+.game .btn:active,
+.game .btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.game .btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.game .btn-success:hover,
+.game .btn-success:focus,
+.game .btn-success.focus,
+.game .btn-success:active,
+.game .btn-success.active {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.game .btn-success:active,
+.game .btn-success.active {
+  background-image: none;
+}
+
+.game .shareButton {
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+}
+
+.footer {
+    padding-top: 20px;
+    color: #767676;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer > div {
+    margin-bottom: 15px;
+}
+
+.footer .libraries a {
+    margin-right: 20px;
+}

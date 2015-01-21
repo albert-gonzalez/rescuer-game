@@ -1,0 +1,37 @@
+{
+  "name": "Rescuer",
+  "version": "1.0.0",
+  "authors": [
+    "vacilone <albert.glez.mld@gmail.com>"
+  ],
+  "description": "Be the rescuer!",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "rescuer",
+    "game"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "easeljs": "~0.8.0",
+    "SoundJS": "~0.6.0",
+    "PreloadJS": "~0.6.0",
+    "easytimer.js": "*",
+    "requirejs": "~2.1.15",
+    "underscore": "~1.7.0",
+    "jquery": "~2.1.3",
+    "text": "~2.0.13",
+    "share-button": "~0.5.0",
+    "bootstrap": "~3.3.1"
+  }
+}
