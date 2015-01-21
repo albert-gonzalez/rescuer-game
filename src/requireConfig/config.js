@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: "../../src",
+    baseUrl: "../",
     paths: {
         text: '../vendor/text/text',
         easeljs: '../vendor/easeljs/lib/easeljs-0.8.0.min',
