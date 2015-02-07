@@ -8,8 +8,7 @@ module.exports = function(grunt) {
                     baseUrl: "src",
                     mainConfigFile: 'src/requireConfig/config.js',
                     name: "rescuer/js/main",
-                    out: "dist/game.js",
-                    optimize: "none"
+                    out: "dist/game.js"
                 }
             }
         }
